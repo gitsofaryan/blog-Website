@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const Blog = require("./models/blog");
-mongoose.connect("mongodb://riteshponty:VcCujxKVZPImncPV@ac-aztryrz-shard-00-00.kieyyok.mongodb.net:27017,ac-aztryrz-shard-00-01.kieyyok.mongodb.net:27017,ac-aztryrz-shard-00-02.kieyyok.mongodb.net:27017/?ssl=true&replicaSet=atlas-woodvy-shard-0&authSource=admin&retryWrites=true&w=majority").then(() => {
+mongoose.connect("mongodb+srv://admin:admin@cluster0.hmyefne.mongodb.net/").then(() => {
     console.log('database connected');
 }).catch((err) => {
     console.log(err);
